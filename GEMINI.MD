@@ -29,7 +29,7 @@
     - Removing the now-redundant `oninput` attributes from the HTML and centralizing event handling in the JavaScript file.
     - Correcting the CSS to ensure the canvas properly fills its container, fixing drawing and cursor alignment issues.
     - Implementing a robust `resizeCanvas` function to handle high-DPI displays and window resizing.
-- **Live Preview Placeholder Improvement**: Enhanced the live preview to correctly display placeholder lines (e.g., "________________") for all relevant fields when they are empty, including dynamic placeholders for empty text fields, dates, and calculated fields. This also includes displaying the drawn signature dynamically via `<img>` tags.
+- **Live Preview Placeholder Improvement**: Enhanced the live preview to correctly display placeholder lines (e.g., "________________") for all relevant fields when they are empty, including dynamic placeholders for empty text fields, dates, and calculated fields. This also includes displaying the drawn signature dynamically via `<img>` tags, and now uses a static image as a default placeholder when no signature has been drawn.
 - **Increased Preview Page Width**: Increased the `max-width` of the preview pages from `500px` to `700px` in `templates/index.html` to provide more space for content and improve readability.
 - **"Clear Signature" Button Fix**: Fixed the "Clear Signature" button by removing the inline `onclick` attribute and adding a proper event listener in `static/js/index.js`. This resolves a scope issue where the `signaturePad` object was not accessible globally. The button now correctly clears the signature pad and updates the live preview.
 

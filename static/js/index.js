@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('preview_email').innerText = document.getElementById('in_email').value || '____________________';
 
         // Update signature image in preview
-        const signatureImage = signaturePad.isEmpty() ? '' : signaturePad.toDataURL();
+        const signatureImage = signaturePad.isEmpty() ? staticSignaturePlaceholder : signaturePad.toDataURL();
         document.getElementById('preview_signature_image').src = signatureImage;
         document.getElementById('preview_affidavit_signature_image').src = signatureImage;
 
