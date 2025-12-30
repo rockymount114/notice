@@ -27,7 +27,7 @@
         // From visible inputs (Notice Details)
         document.getElementById('preview_notice_date').innerText = document.getElementById('in_date').value;
         const landlordName = document.getElementById('in_lname').value;
-        document.getElementById('preview_landlord_name').innerText = landlordName;
+        document.getElementById('preview_landlord_name').innerText = landlordName || '________________';
         document.getElementById('preview_print_name').innerText = landlordName.toUpperCase();
         document.getElementById('preview_affidavit_name').innerText = landlordName;
         document.getElementById('preview_affidavit_print_name').innerText = landlordName.toUpperCase();

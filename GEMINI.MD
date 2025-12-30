@@ -27,6 +27,7 @@
     - Correcting the CSS to ensure the canvas properly fills its container, fixing drawing and cursor alignment issues.
     - Implementing a robust `resizeCanvas` function to handle high-DPI displays and window resizing.
     - Fixing a critical syntax error in `static/js/index.js` by removing erroneous `<script>` tags that prevented the JavaScript from executing.
+- **Live Preview Placeholder Improvement**: Enhanced the live preview to correctly display placeholder lines (e.g., "________________") for fields like "Landlord Name" when they are empty, providing a clearer visual representation before user input.
 
 ## How to use
 1. Run `pip install flask fpdf`.
