@@ -13,7 +13,12 @@ This Flask application provides a web-based interface to generate a two-page "No
 
 ### Application Screenshots
 
+PDF page 1 review
+
 <img src="static/images/preview page1.png" alt="Preview Page 1" width="800"/>
+
+PDF page 2 review
+
 <img src="static/images/preview page2.png" alt="Preview Page 2" width="800"/>
 
 ## Technology Stack
