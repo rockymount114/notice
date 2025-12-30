@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         // From visible inputs (Affidavit of Service)
-        document.getElementById('preview_date_of_service').innerText = document.getElementById('in_date_of_service').value || '________ / ________ / ________ , ____ : ____';
+        document.getElementById('preview_date_of_service').innerText = document.getElementById('in_date_of_service').value || '____ / _____ / ____ , ___ : ___';
         const authName = document.getElementById('in_authorized_individual_name').value;
         document.getElementById('preview_authorized_individual_name_1').innerText = authName || '_____________________________________';
         document.getElementById('preview_authorized_individual_name_2').innerText = authName || '_____________________________________';
