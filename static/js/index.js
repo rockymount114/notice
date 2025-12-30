@@ -25,21 +25,21 @@
     
     function updatePreview() {
         // From visible inputs (Notice Details)
-        document.getElementById('preview_notice_date').innerText = document.getElementById('in_date').value;
+        document.getElementById('preview_notice_date').innerText = document.getElementById('in_date').value || '____________________';
         const landlordName = document.getElementById('in_lname').value;
-        document.getElementById('preview_landlord_name').innerText = landlordName || '________________';
+        document.getElementById('preview_landlord_name').innerText = landlordName || '________________________________';
         document.getElementById('preview_print_name').innerText = landlordName.toUpperCase();
         document.getElementById('preview_affidavit_name').innerText = landlordName;
         document.getElementById('preview_affidavit_print_name').innerText = landlordName.toUpperCase();
         document.getElementById('preview_property_address').innerText = document.getElementById('in_addr').value;
-        document.getElementById('preview_landlord_address').innerText = document.getElementById('in_landlord_address').value;
+        document.getElementById('preview_landlord_address').innerText = document.getElementById('in_landlord_address').value || '____________________________';
         document.getElementById('preview_state').innerText = document.getElementById('in_state').value || '_________';
         document.getElementById('preview_county').innerText = document.getElementById('in_county').value || '_________';
-        document.getElementById('preview_tenant_names').innerText = document.getElementById('in_tenant_names').value;
-        document.getElementById('preview_lease_date').innerText = document.getElementById('in_lease_date').value;
+        document.getElementById('preview_tenant_names').innerText = document.getElementById('in_tenant_names').value || '_________';
+        document.getElementById('preview_lease_date').innerText = document.getElementById('in_lease_date').value || '_________';
         
-        const rentalDueStartDate = document.getElementById('in_rental_due_start_date').value;
-        const rentalDueEndDate = document.getElementById('in_rental_due_end_date').value;
+        const rentalDueStartDate = document.getElementById('in_rental_due_start_date').value || '_________';
+        const rentalDueEndDate = document.getElementById('in_rental_due_end_date').value || '_________';
         let rentPeriod = "";
         if (rentalDueStartDate && rentalDueEndDate) {
             rentPeriod = `${rentalDueStartDate} to ${rentalDueEndDate}`;
@@ -60,8 +60,8 @@
         const totalDue = rentDue + lateFees + otherFees;
         document.getElementById('preview_total_due').innerText = totalDue.toFixed(2);
 
-        document.getElementById('preview_telephone').innerText = document.getElementById('in_telephone').value;
-        document.getElementById('preview_email').innerText = document.getElementById('in_email').value;
+        document.getElementById('preview_telephone').innerText = document.getElementById('in_telephone').value || '________________';
+        document.getElementById('preview_email').innerText = document.getElementById('in_email').value || '_____________________';
 
         // From visible inputs (Affidavit of Service)
         document.getElementById('preview_date_of_service').innerText = document.getElementById('in_date_of_service').value;
