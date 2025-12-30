@@ -41,3 +41,11 @@ PDF page 2 review
 3. Open your web browser and navigate to the address provided by Flask (usually `http://127.0.0.1:5000`).
 4. Fill out the fields in the form; the preview on the right-hand panel will update as you type.
 5. Sign in the signature box and click **Download PDF** to generate and download the final notice.
+
+---
+
+### Support My Work
+
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="rockymount114" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+
+**Note:** The "Buy Me a Coffee" button script above is provided as plain text and may not render as an interactive button in all Markdown viewers (e.g., GitHub). For an interactive experience, you might need to view this `README.md` in a compatible environment or integrate it into a web page.
