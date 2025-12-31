@@ -1,6 +1,11 @@
 FROM python:3.12-slim
-COPY . /app
+
 WORKDIR /app
-RUN pip install fpdf2 flask
+COPY . .
+
+# Use UV (your preferred tool) or pip
+RUN pip install fpdf2 flask gunicorn
+
 EXPOSE 5000
-CMD ["python", "app.py"]
+
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
