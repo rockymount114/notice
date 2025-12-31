@@ -1,4 +1,4 @@
-# Flask Lease Notice Generator
+# NC Lease Notice Generator
 
 This Flask application provides a web-based interface to generate a two-page "Notice to Pay Rent or Vacate" and "Affidavit of Service" for North Carolina. It features a live preview that updates as you fill out the form, a digital signature pad, and generates a downloadable PDF of the final notice.
 
